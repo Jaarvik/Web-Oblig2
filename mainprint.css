@@ -1,0 +1,23 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    font-size: 18pt;
+
+}
+
+header {
+    display: none;
+    border: none;
+}
+
+aside {
+    display: block;
+}
+
+
+
+a:after{
+    content:" (" attr(href) ") ";
+    font-size:0.8em;
+    font-weight:normal;
+}

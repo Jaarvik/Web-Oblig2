@@ -1,0 +1,233 @@
+/*CSS til index-siden*/
+#bodyindex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header header"
+        "aside main main main"
+        "footer footer footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+header {
+
+    grid-area: header;
+    background-image: url("bilder/headerimage.jpg");
+    background-size: 100%;
+    border: solid 1px;
+    margin-top: 3px;
+
+}
+/* CSS til navigasjon*/
+#navigasjon {
+
+    padding: 15px;
+    margin: 10px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    color: black;
+  
+}
+
+nav a:hover {
+    color: red;
+}
+
+/*CSS til aside*/
+#sidekolonne {
+
+    grid-area: aside;
+    border: solid 1px;
+    background-color: rgb(149, 233, 233);
+    padding: 0;
+       
+}
+
+#sidekolonne>section>iframe {
+    
+    width: 100%;
+}
+
+#linkerResponsiv>a {
+
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+    color: black;
+    
+}
+
+#knappGitHub {
+
+    margin: 1rem;
+}
+
+#knappGitHub>a {
+
+    text-decoration: none;
+    margin: 2px;
+    border: solid black;
+    color: white;
+    background-color: black;
+
+}
+
+/*CSS til main-area*/
+#hovedboks {
+    width: 100%;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.artikkel {
+    grid-area: main;
+    width: 31.55%;
+    background-color: lightgray;
+    border: solid 1px;
+    text-align: center;
+    margin-left: 2.6px; 
+    padding: 10px;  
+}
+
+.lesmer {
+
+    border: solid black;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS til footer*/
+#footer {
+
+    grid-area: footer;
+    border: solid 1px;
+    background-image: url("bilder/headerimage.jpg");
+    padding: 3px;
+    margin: 3px;
+}
+
+/* Her kommer CSS til Github*/
+
+#bodyGithub{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main image"
+        "footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainArtikkelGitHub{
+
+    grid-area: main;
+    margin-left: 20px;
+}
+
+#githubbilde{
+
+    grid-area: image;
+    max-width: 60%;
+    margin-left: 10vh;
+}
+
+/*Her kommer css til mediatyper*/
+
+#bodyMedia{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main image"
+        "footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainArtikkelMedia{
+
+    grid-area: main;
+    margin-left: 20px;
+}
+
+#medietyper{
+
+    grid-area: image;
+    max-width: 75%;
+    margin-left: 10vh;
+   
+}
+
+/*Her kommer CSS til malen*/
+
+#bodyMal{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "bilder"
+        "footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+
+#bilder{
+
+    grid-area: bilder;
+}
+
+/* Her kommer CSS til CSS-Layouts*/
+
+#bodyLayouts {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main image"
+        "footer footer";
+    grid-gap: 10px;
+    max-width: 99%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#csslayoutsimage {
+
+    grid-area: image;
+    margin-left: 10vh;
+    width: 50%;
+}
+
